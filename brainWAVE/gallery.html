@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>brainWAVE - GALLERY</title>
+    <link rel="stylesheet" href="css/gallery.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+        </div>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./game.html">Mini Game</a></li>
+          <li><a class="active" href="./gallery.html">Gallery</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <img
+          src="img/icon/menu.png"
+          class="menu"
+          onclick="sideMenu(0)"
+          alt="menu"
+      >
+      </nav>
+      <div class="side-menu" id="side-menu">
+        <div class="close" onclick="sideMenu(1)">
+          <img src="img/icon/close.png" alt="icon">
+        </div>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="./game.html">Mini Game</a></li>
+          <li><a class="active" href="./gallery.html">Gallery</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="main_title">
+      <h2>Image Gallery</h2>
+      <p>Click on any images to see large view</p>
+    </div>
+
+    <!-- The four columns -->
+    <div class="row">
+      <div class="column">
+        <img
+          src="img/img_nature.jpg"
+          alt="Nature"
+          style="width: 100%"
+          onclick="myFunction(this);"
+      >
+      </div>
+      <div class="column">
+        <img
+          src="img/img_snow.jpg"
+          alt="Snow"
+          style="width: 100%"
+          onclick="myFunction(this);"
+      >
+      </div>
+      <div class="column">
+        <img
+          src="img/img_mountains.jpg"
+          alt="Mountains"
+          style="width: 100%"
+          onclick="myFunction(this);"
+      >
+      </div>
+      <div class="column">
+        <img
+          src="img/img_lights.jpg"
+          alt="Lights"
+          style="width: 100%"
+          onclick="myFunction(this);"
+      >
+      </div>
+    </div>
+
+    <div class="container">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn"
+        >&times;</span
+      >
+      <img id="expandedImg" alt="icon" src="img/img_lights.jpg" style="width: 100%">
+      <div id="imgtext"></div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <div class="left-col">
+          <img src="img/logo.png" alt="main-logo" style="width: 200px">
+          <div class="logo"></div>
+          <div class="social-media">
+            <a href="#"><img alt="icon" src="img/icon/fb.png"></a>
+            <a href="#"><img alt="icon" src="img/icon/insta.png"></a>
+            <a href="#"><img alt="icon" src="img/icon/tt.png"></a>
+            <a href="#"><img alt="icon" src="img/icon/ytube.png"></a>
+            <a href="#"><img alt="icon" src="img/icon/linkedin.png"></a>
+          </div>
+          <br><br>
+          <p class="rights-text">
+            Copyright © 2024 Created By brainWAVE, All Rights Reserved.
+          </p>
+          <br>
+          <p>
+            <img src="img/icon/location.png" alt="icon">XYZ University<br>City,
+            Ireland-051
+          </p>
+          <br>
+          <p>
+            <img src="img/icon/phone.png" alt="icon"> +1 900-99-000-22<br><img alt="icon"
+              src="img/icon/mail.png"
+          >&nbsp; brainwave@example.com
+          </p>
+        </div>
+        <div class="right-col">
+          <h1 style="color: #fff">Our Newsletter</h1>
+          <div class="border"></div>
+          <br>
+          <p>Enter Your Email to get our News and updates.</p>
+          <form class="newsletter-form">
+            <input class="txtb" type="email" placeholder="Enter Your Email">
+            <input class="btn" type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/gallery.js" defer></script>
+    <script src="js/index.js" defer></script>
+  </body>
+</html>
