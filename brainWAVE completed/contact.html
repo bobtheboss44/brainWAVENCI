@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>brainWAVE - FORM</title>
+    <link rel="stylesheet" href="css/contact.css">
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+        </div>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./game.html">Mini Game</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a class="active" href="./contact.html">Contact</a></li>
+        </ul>
+        <img
+          src="img/icon/menu.png"
+          class="menu"
+          onclick="sideMenu(0)"
+          alt="menu"
+      >
+      </nav>
+      <div class="side-menu" id="side-menu">
+        <div class="close" onclick="sideMenu(1)">
+          <img src="img/icon/close.png" alt="">
+        </div>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="./game.html">Mini Game</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a class="active" href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="wrapper">
+      <h2>Contact us</h2>
+      <div id="error_message"></div>
+      <form id="myform" onsubmit="return validate();">
+        <div class="input_field">
+          <input type="text" placeholder="Name" id="name">
+        </div>
+        <div class="input_field">
+          <input type="text" placeholder="Subject" id="subject">
+        </div>
+        <div class="input_field">
+          <input type="text" placeholder="Email" id="email">
+        </div>
+        <div class="input_field">
+          <textarea placeholder="Message" id="message"> </textarea>
+        </div>
+        <div class="btn">
+          <input type="submit">
+        </div>
+      </form>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <div class="left-col">
+          <img src="img/logo.png" alt="mian-logo" style="width: 200px">
+          <div class="logo"></div>
+          <div class="social-media">
+            <a href="#"><img alt="icon" src="img/icon/fb.png"></a>
+            <a href="#"><img alt="icon" src="img/icon/insta.png"></a>
+            <a href="#"><img alt="icon" src="img/icon/tt.png"></a>
+            <a href="#"><img alt="icon" src="img/icon/ytube.png"></a>
+            <a href="#"><img alt="icon" src="img/icon/linkedin.png"></a>
+          </div>
+          <br><br>
+          <p class="rights-text">
+            Copyright © 2024 Created By brainWAVE, All Rights Reserved.
+          </p>
+          <br>
+          <p>
+            <img src="img/icon/location.png" alt="icon">XYZ University<br>City,
+            Ireland-051
+          </p>
+          <br>
+          <p>
+            <img src="img/icon/phone.png" alt="icon"> +1 900-99-000-22<br><img alt="icon"
+              src="img/icon/mail.png"
+          >&nbsp; brainwave@example.com
+          </p>
+        </div>
+        <div class="right-col">
+          <h1 style="color: #fff">Our Newsletter</h1>
+          <div class="border"></div>
+          <br>
+          <p>Enter Your Email to get our News and updates.</p>
+          <form class="newsletter-form">
+            <input class="txtb" type="email" placeholder="Enter Your Email">
+            <input class="btn" type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/contact.js" defer></script>
+    <script src="js/index.js" defer></script>
+  </body>
+</html>
